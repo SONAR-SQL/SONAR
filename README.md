@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="public/sonar-logo.svg" alt="SONAR Logo" width="200" height="200">
+  <img src="https://raw.githubusercontent.com/SONAR-SQL/SONAR/master/public/sonar-logo.svg" alt="SONAR Logo" width="200" height="200">
   <h1>SONAR - AI Trade Scout</h1>
   <p>Real-time blockchain intelligence for Solana traders</p>
   
