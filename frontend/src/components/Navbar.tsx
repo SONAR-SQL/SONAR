@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { RiNotification3Line, RiUser3Line, RiLogoutBoxRLine, RiSearch2Line } from 'react-icons/ri'
 import { useAppSelector, useAppDispatch } from '../redux/hooks'
 import { logout } from '../redux/slices/authSlice'
+import logoImage from '../assets/sonar-logo.svg'
 
 const Navbar = () => {
   const [showUserMenu, setShowUserMenu] = useState(false)
@@ -18,13 +19,18 @@ const Navbar = () => {
   return (
     <header className="bg-slate-900 border-b border-slate-700 py-3 px-4">
       <div className="flex items-center justify-between">
-        <div className="relative w-96">
-          <input
-            type="text"
-            placeholder="搜索代币、钱包地址..."
-            className="w-full bg-slate-800 border border-slate-700 rounded-lg py-2 pl-10 pr-4 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-          />
-          <RiSearch2Line className="absolute left-3 top-2.5 text-slate-400" size={18} />
+        <div className="flex items-center gap-4">
+          <Link to="/" className="mr-4">
+            <img src={logoImage} alt="SONAR" className="h-8" />
+          </Link>
+          <div className="relative w-80">
+            <input
+              type="text"
+              placeholder="搜索代币、钱包地址..."
+              className="w-full bg-slate-800 border border-slate-700 rounded-lg py-2 pl-10 pr-4 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+            />
+            <RiSearch2Line className="absolute left-3 top-2.5 text-slate-400" size={18} />
+          </div>
         </div>
 
         <div className="flex items-center gap-4">

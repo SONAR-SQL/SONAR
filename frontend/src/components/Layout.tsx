@@ -12,6 +12,7 @@ import {
   FaBars, 
   FaTimes
 } from 'react-icons/fa';
+import logoImage from '../assets/sonar-logo.svg';
 
 const Layout: React.FC = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -73,7 +74,9 @@ const Layout: React.FC = () => {
       >
         <div className="flex items-center justify-between h-16 px-6 border-b border-blue-700">
           <div className="flex items-center">
-            <span className="text-xl font-bold">SONAR</span>
+            <Link to="/">
+              <img src={logoImage} alt="SONAR" className="h-8" />
+            </Link>
           </div>
           <button onClick={toggleSidebar} className="lg:hidden">
             <FaTimes className="h-6 w-6" />
