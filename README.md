@@ -25,9 +25,6 @@
   <a href="https://x.com/SolanaSonar">
     <img src="https://img.shields.io/badge/Twitter-@SolanaSonar-blue?style=flat-square&logo=twitter&logoColor=white" alt="Twitter">
   </a>
-  <a href="https://github.com/SONAR-SQL/SONAR">
-    <img src="https://img.shields.io/badge/GitHub-SONAR--SQL%2FSONAR-blue?style=flat-square&logo=github&logoColor=white" alt="GitHub">
-  </a>
   <a href="https://github.com/SONAR-SQL/SONAR/blob/main/LICENSE">
     <img src="https://img.shields.io/github/license/SONAR-SQL/SONAR?style=flat-square" alt="License">
   </a>
@@ -39,7 +36,6 @@ SONAR is an innovative AI-driven trading intelligence platform in the Solana eco
 
 - **Website**: [https://www.sonar.tel](https://www.sonar.tel)
 - **Twitter**: [@SolanaSonar](https://x.com/SolanaSonar)
-- **GitHub**: [https://github.com/SONAR-SQL/SONAR](https://github.com/SONAR-SQL/SONAR)
 
 ## 📡 Key Features
 
@@ -205,17 +201,13 @@ JWT_EXPIRES_IN=7d
 
 ## 📊 Data Flow
 
-```
-┌─────────────┐     ┌─────────────┐     ┌─────────────┐
-│  Blockchain │────►│  Data       │────►│  Analysis   │
-│  Events     │     │  Collection │     │  Engine     │
-└─────────────┘     └─────────────┘     └─────────────┘
-                                              │
-                                              ▼
-┌─────────────┐     ┌─────────────┐     ┌─────────────┐
-│  User       │◄────│  Alert      │◄────│  Pattern    │
-│  Interface  │     │  System     │     │  Recognition│
-└─────────────┘     └─────────────┘     └─────────────┘
+```mermaid
+graph TD
+    A[Blockchain Events] --> B[Data Collection]
+    B --> C[Analysis Engine]
+    C --> D[Pattern Recognition]
+    D --> E[Alert System]
+    E --> F[User Interface]
 ```
 
 ## 🔥 Unique Features
@@ -244,11 +236,9 @@ JWT_EXPIRES_IN=7d
 - 📅 AI pattern recognition integration
 - 📅 Mobile application development
 - 📅 Enhanced market analysis tools
-- 📅 API documentation and developer resources
 
 ### Q1 2026 (Planned)
 - 📅 Advanced trading strategy recommendations
-- 📅 Social features and community insights
 - 📅 Premium subscription model
 - 📅 Integration with popular trading platforms
 
@@ -272,15 +262,7 @@ npm test
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome!
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit changes (`git commit -m 'Add amazing feature'`)
-4. Push to branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-Please refer to our [contribution guidelines](CONTRIBUTING.md) for more details.
+Contributions, issues, and feature requests are welcome! Feel free to check our GitHub repository or contact us via Twitter.
 
 ## ❓ FAQ
 
@@ -301,24 +283,6 @@ Currently, SONAR focuses exclusively on the Solana blockchain. Support for addit
 
 ## 📄 License
 
-MIT License
+[MIT License](LICENSE)
 
-Copyright (c) 2023 SONAR
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE. 
+Copyright (c) 2023 SONAR 
