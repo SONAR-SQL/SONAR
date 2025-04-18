@@ -7,6 +7,16 @@
 <p align="center">
   Real-time blockchain intelligence for Solana traders
 </p>
+
+<p align="center">
+  <a href="#-key-features">Features</a> •
+  <a href="#-architecture">Architecture</a> •
+  <a href="#-installation">Installation</a> •
+  <a href="#-usage">Usage</a> •
+  <a href="#-roadmap">Roadmap</a> •
+  <a href="#-faq">FAQ</a> •
+  <a href="#-license">License</a>
+</p>
   
 <p align="center">
   <a href="https://www.sonar.tel">
