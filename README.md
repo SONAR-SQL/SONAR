@@ -1,6 +1,10 @@
 # SONAR - AI Trade Scout
 
 <p align="center">
+  <img width="300" src="https://openseauserdata.com/files/2a3d84abc5e01adaf97bc5c927a02b59.gif" alt="SONAR Logo">
+</p>
+
+<p align="center">
   Real-time blockchain intelligence for Solana traders
 </p>
 
