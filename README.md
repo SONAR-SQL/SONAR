@@ -1,11 +1,12 @@
-<div align="center">
+# SONAR - AI Trade Scout
 
-![SONAR Logo](https://github.com/SONAR-SQL/SONAR/assets/129583265/72b0cd41-02f4-4fa3-a77d-ca0e8538d20e)
+<p align="center">
+  <img width="300" src="https://s2.loli.net/2024/04/18/U53LYyf8TkQOvnc.png" alt="SONAR Logo">
+</p>
 
-<h1>SONAR - AI Trade Scout</h1>
-<p>Real-time blockchain intelligence for Solana traders</p>
-  
-<p>
+<p align="center">Real-time blockchain intelligence for Solana traders</p>
+
+<p align="center">
   <a href="#key-features">Features</a> •
   <a href="#architecture">Architecture</a> •
   <a href="#installation">Installation</a> •
@@ -15,7 +16,7 @@
   <a href="#license">License</a>
 </p>
   
-<p>
+<p align="center">
   <a href="https://www.sonar.tel">
     <img src="https://img.shields.io/badge/Website-sonar.tel-blue?style=flat-square&logo=world&logoColor=white" alt="Website">
   </a>
@@ -29,7 +30,6 @@
     <img src="https://img.shields.io/github/license/SONAR-SQL/SONAR?style=flat-square" alt="License">
   </a>
 </p>
-</div>
 
 ## 📋 Overview
 
