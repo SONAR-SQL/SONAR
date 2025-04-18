@@ -7,16 +7,6 @@
 <p align="center">
   Real-time blockchain intelligence for Solana traders
 </p>
-
-<p align="center">
-  <a href="#key-features">Features</a> •
-  <a href="#architecture">Architecture</a> •
-  <a href="#installation">Installation</a> •
-  <a href="#usage">Usage</a> •
-  <a href="#roadmap">Roadmap</a> •
-  <a href="#faq">FAQ</a> •
-  <a href="#license">License</a>
-</p>
   
 <p align="center">
   <a href="https://www.sonar.tel">
@@ -24,9 +14,6 @@
   </a>
   <a href="https://x.com/SolanaSonar">
     <img src="https://img.shields.io/badge/Twitter-@SolanaSonar-blue?style=flat-square&logo=twitter&logoColor=white" alt="Twitter">
-  </a>
-  <a href="https://github.com/SONAR-SQL/SONAR/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/SONAR-SQL/SONAR?style=flat-square" alt="License">
   </a>
 </p>
 
@@ -285,4 +272,4 @@ Currently, SONAR focuses exclusively on the Solana blockchain. Support for addit
 
 [MIT License](LICENSE)
 
-Copyright (c) 2025 SONAR 
+Copyright (c) 2025 SONAR
