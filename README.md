@@ -285,4 +285,4 @@ Currently, SONAR focuses exclusively on the Solana blockchain. Support for addit
 
 [MIT License](LICENSE)
 
-Copyright (c) 2023 SONAR 
+Copyright (c) 2025 SONAR 
