@@ -1,32 +1,34 @@
 <div align="center">
-  <img src="https://user-images.githubusercontent.com/129583265/227400296-479754c0-6b7c-43e1-ad24-61bc1d21c4c9.png" alt="SONAR Logo" width="200" height="200">
-  <h1>SONAR - AI Trade Scout</h1>
-  <p>Real-time blockchain intelligence for Solana traders</p>
+
+![SONAR Logo](https://i.imgur.com/wkHCsn1.png)
+
+<h1>SONAR - AI Trade Scout</h1>
+<p>Real-time blockchain intelligence for Solana traders</p>
   
-  <p>
-    <a href="#key-features">Features</a> •
-    <a href="#architecture">Architecture</a> •
-    <a href="#installation">Installation</a> •
-    <a href="#usage">Usage</a> •
-    <a href="#roadmap">Roadmap</a> •
-    <a href="#faq">FAQ</a> •
-    <a href="#license">License</a>
-  </p>
+<p>
+  <a href="#key-features">Features</a> •
+  <a href="#architecture">Architecture</a> •
+  <a href="#installation">Installation</a> •
+  <a href="#usage">Usage</a> •
+  <a href="#roadmap">Roadmap</a> •
+  <a href="#faq">FAQ</a> •
+  <a href="#license">License</a>
+</p>
   
-  <p>
-    <a href="https://www.sonar.tel">
-      <img src="https://img.shields.io/badge/Website-sonar.tel-blue?style=flat-square&logo=world&logoColor=white" alt="Website">
-    </a>
-    <a href="https://x.com/SolanaSonar">
-      <img src="https://img.shields.io/badge/Twitter-@SolanaSonar-blue?style=flat-square&logo=twitter&logoColor=white" alt="Twitter">
-    </a>
-    <a href="https://github.com/SONAR-SQL/SONAR">
-      <img src="https://img.shields.io/badge/GitHub-SONAR--SQL%2FSONAR-blue?style=flat-square&logo=github&logoColor=white" alt="GitHub">
-    </a>
-    <a href="https://github.com/SONAR-SQL/SONAR/blob/main/LICENSE">
-      <img src="https://img.shields.io/github/license/SONAR-SQL/SONAR?style=flat-square" alt="License">
-    </a>
-  </p>
+<p>
+  <a href="https://www.sonar.tel">
+    <img src="https://img.shields.io/badge/Website-sonar.tel-blue?style=flat-square&logo=world&logoColor=white" alt="Website">
+  </a>
+  <a href="https://x.com/SolanaSonar">
+    <img src="https://img.shields.io/badge/Twitter-@SolanaSonar-blue?style=flat-square&logo=twitter&logoColor=white" alt="Twitter">
+  </a>
+  <a href="https://github.com/SONAR-SQL/SONAR">
+    <img src="https://img.shields.io/badge/GitHub-SONAR--SQL%2FSONAR-blue?style=flat-square&logo=github&logoColor=white" alt="GitHub">
+  </a>
+  <a href="https://github.com/SONAR-SQL/SONAR/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/SONAR-SQL/SONAR?style=flat-square" alt="License">
+  </a>
+</p>
 </div>
 
 ## 📋 Overview
