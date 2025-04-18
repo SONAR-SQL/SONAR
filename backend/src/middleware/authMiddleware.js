@@ -1,60 +1,68 @@
 const jwt = require('jsonwebtoken');
 const User = require('../models/User');
+const { createError } = require('../utils/errorHandler');
+const { asyncHandler } = require('../utils/asyncHandler');
 
-// Protect routes middleware
-exports.protect = async (req, res, next) => {
+/**
+ * Protect routes - Verify user is authenticated
+ * @route Any protected route
+ * @access Private
+ */
+const protect = asyncHandler(async (req, res, next) => {
   let token;
-
-  // Get token
-  if (
-    req.headers.authorization &&
-    req.headers.authorization.startsWith('Bearer')
-  ) {
-    token = req.headers.authorization.split(' ')[1];
+  
+  // Check for token in Authorization header
+  if (req.headers.authorization && req.headers.authorization.startsWith('Bearer')) {
+    try {
+      // Get token from header (remove Bearer prefix)
+      token = req.headers.authorization.split(' ')[1];
+      
+      // Verify token
+      const decoded = jwt.verify(token, process.env.JWT_SECRET);
+      
+      // Add user to request object (without password)
+      req.user = await User.findById(decoded.id).select('-password');
+      
+      if (!req.user) {
+        throw createError('User not found', 401);
+      }
+      
+      next();
+    } catch (error) {
+      if (error.name === 'JsonWebTokenError') {
+        throw createError('Invalid token', 401);
+      } else if (error.name === 'TokenExpiredError') {
+        throw createError('Token expired', 401);
+      } else {
+        throw error;
+      }
+    }
   }
-
-  // Check if token exists
+  
   if (!token) {
-    return res.status(401).json({
-      success: false,
-      message: 'Unauthorized, please login to access',
-    });
+    throw createError('Not authorized - No token provided', 401);
   }
+});
 
-  try {
-    // Verify token
-    const decoded = jwt.verify(token, process.env.JWT_SECRET);
-
-    // Find user
-    const user = await User.findById(decoded.id).select('-password');
-
-    if (!user) {
-      return res.status(401).json({
-        success: false,
-        message: 'User does not exist',
-      });
-    }
-
-    // Add user info to request object
-    req.user = user;
-    next();
-  } catch (error) {
-    return res.status(401).json({
-      success: false,
-      message: 'Invalid token, please login again',
-    });
+/**
+ * Admin middleware - Verify user is an admin
+ * @route Any admin route
+ * @access Private/Admin
+ */
+const admin = asyncHandler(async (req, res, next) => {
+  // Requires protect middleware to be called first
+  if (!req.user) {
+    throw createError('Not authorized', 401);
   }
-};
+  
+  if (req.user.role !== 'admin') {
+    throw createError('Not authorized as admin', 403);
+  }
+  
+  next();
+});
 
-// Role restriction middleware
-exports.restrictTo = (...subscriptions) => {
-  return (req, res, next) => {
-    if (!subscriptions.includes(req.user.subscription)) {
-      return res.status(403).json({
-        success: false,
-        message: 'You do not have permission to perform this action, please upgrade your subscription',
-      });
-    }
-    next();
-  };
+module.exports = {
+  protect,
+  admin
 }; 
