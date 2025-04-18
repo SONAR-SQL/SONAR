@@ -1,10 +1,8 @@
 # SONAR - AI Trade Scout
 
 <p align="center">
-  <img width="300" src="https://s2.loli.net/2024/04/18/U53LYyf8TkQOvnc.png" alt="SONAR Logo">
+  Real-time blockchain intelligence for Solana traders
 </p>
-
-<p align="center">Real-time blockchain intelligence for Solana traders</p>
 
 <p align="center">
   <a href="#key-features">Features</a> •
