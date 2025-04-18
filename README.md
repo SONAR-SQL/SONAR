@@ -1,6 +1,6 @@
 <div align="center">
 
-![SONAR Logo](https://i.imgur.com/wkHCsn1.png)
+![SONAR Logo](https://github.com/SONAR-SQL/SONAR/assets/129583265/72b0cd41-02f4-4fa3-a77d-ca0e8538d20e)
 
 <h1>SONAR - AI Trade Scout</h1>
 <p>Real-time blockchain intelligence for Solana traders</p>
